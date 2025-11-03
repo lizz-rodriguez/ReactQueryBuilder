@@ -8,18 +8,19 @@ logical operator toggles, and controls for adding or removing conditions.
 
 ```bash
 npm install
-npm run dev
+npm run dev # or: npm start
 ```
 
 If your shell reports `Missing script: "dev"`, double-check that you're running the
-commands from the project root (where `package.json` lives). You can also start the
-development server with `npm start`, which proxies to the same script.
+commands from the project root (where `package.json` lives). Both `npm run dev` and
+`npm start` now invoke the same Vite command, so either will boot the development server
+once you're in the correct directory.
 
 The development server runs on [http://localhost:5173](http://localhost:5173) by default.
 
 ## Available scripts
 
-- `npm run dev` – start the Vite dev server.
+- `npm run dev` / `npm start` – start the Vite dev server.
 - `npm run build` – create a production build.
 - `npm run preview` – preview the production build locally.
 - `npm run lint` – lint the project with ESLint.
